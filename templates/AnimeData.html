@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <form method="post" action="/add_by_form">
+        <label>AnimeID: </label>
+        <input id="anime_id" name="anime_id" type="number" step="1" pattern="\d+"/>
+        <br>
+        <label>Name: </label>
+        <input id="name" name="name"type="text"/>
+        <br>
+        <label>Genre: </label>
+        <input id="genre" name="genre" type="text"/>
+        <br>
+        <label>Anime Type: </label>
+        <input id="anime_type" name="anime_type" type="text"/>
+        <br>
+        <label>episodes: </label>
+        <input id="episodes" name="episodes" type="text"/>
+        <br>
+        <label>Rating </label>
+        <input id="rating" name="rating" type="text"/>
+        <br>
+        <label>Members: </label>
+        <input id="members" name="members"type="text"/>
+        <br>
+        <input type="submit" value="Submit"/>
+
+
+
+    </form>
+{% endblock %}

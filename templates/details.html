@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th><th>Name</th><th>Genre</th><th>Type</th><th>Episodes</th><th>Rating</th><th>Members</th>
+                    </tr>
+                </thead>
+                <tbody>                    
+                    <tr>
+                        <td>{{anime.anime_id}}</td>
+						<td>{{anime.name}}</td>
+						<td>{{anime.genre}}</td>
+						<td>{{anime.anime_type}}</td>
+						<td>{{anime.episodes}}</td>
+						<td>{{anime.rating}}</td>
+						<td>{{anime.members}}</td>
+                    </tr>                
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
